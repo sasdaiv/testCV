@@ -3,83 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kozak Vasyl CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="biden.jpg" width="200" alt="Ops..." />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="biden.jpg" alt="Ops..." class="biden" />
+        <div class="info-text">
           <h1>Kozak Vasyl</h1>
-          <p><em>I`am co-founder of VormaGis company.</em></p>
+          <p>I`am co-founder of <strong>VormaGis</strong> company.</p>
           <p>I like traveling, books and programing.</p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
-    <h2>My social media</h2>
-    <ul type="square">
-      <li>
-        <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank"
-          >Instagram</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.youtube.com/watch?v=M_pclb-58ZY&t=445s"
-          target="_blank"
-          >Youtube</a
-        >
-      </li>
-    </ul>
-    <hr />
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Cars</li>
-      <li>UFC</li>
-      <li>Traveling</li>
-    </ol>
-    <hr />
-    <h2>Prev. Jobs</h2>
-    <table border="2">
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Speciality</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>EPAM</td>
-          <td>Software Engineer</td>
-          <td>2016-2017</td>
-        </tr>
-        <tr>
-          <td>Software Outsircing Services</td>
-          <td>Lead Frontend</td>
-          <td>2017-2019</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h2>Youtube Courses</h2>
-    <a href="youtube.html">Watch list...</a>
-    <hr />
-    <h2>Contacts</h2>
-    <form action="/">
-      <label for="name">Your name:</label>
-      <input type="text" id="name" placeholder="John Johnson..." />
-      <br /><br />
-      <label for="email">Your email:</label>
-      <input type="email" id="email" placeholder="john_johnson@gmail.com..." />
-      <br /><br />
-      <label for="text">Your question: </label>
-      <textarea id="text" rows="2" cols="15"></textarea>
-      <br />
-      <input type="submit" value="Connect!" placeholder="john_johnson@gmail.com..."/>
-    </form>
+          <h4>My social media</h4>
+          <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.youtube.com/watch?v=M_pclb-58ZY&t=445s"
+            target="_blank"
+            >Youtube</a
+          >
+        </div>
+      </div>
+      <div class="card bg-gray1">
+        <h2>My hobbies</h2>
+        <ol class="list">
+          <li>Cars</li>
+          <li>UFC</li>
+          <li>Traveling</li>
+        </ol>
+      </div>
+
+      <div class="card bg-gray2">
+        <h2>Prev. Jobs</h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>EPAM</td>
+              <td>Software Engineer</td>
+              <td>2016-2017</td>
+            </tr>
+            <tr>
+              <td>Software Outsircing Services</td>
+              <td>Lead Frontend</td>
+              <td>2017-2019</td>
+            </tr>
+            <tr>
+              <td>GisPoint</td>
+              <td>Gis Engineer</td>
+              <td>2018-2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-gray3">
+        <h2>Courses</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU"
+              >HTML для Начинающих - Практический Курс</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=2093s"
+              >CSS для Начинающих - Практический Курс
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Contacts</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input type="text" id="name" placeholder="John Johnson..." />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="john.johnson@gmail.com..."
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Your question: </label>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Connect!" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
